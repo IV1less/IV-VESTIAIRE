@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,26 +32,29 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: clamp(0.8rem, 4vw, 1.2rem) clamp(1rem, 5vw, 1.8rem);
-            background: rgba(0,0,0,0.92);
+            padding: clamp(0.8rem, 3vw, 1rem) clamp(1rem, 4vw, 1.5rem);
+            background: rgba(0,0,0,0.95);
             position: fixed;
             width: 100%;
             top: 0;
+            left: 0;
+            right: 0;
             z-index: 100;
             border-bottom: 1px solid var(--border);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
         }
 
         .logo {
-            font-size: clamp(1.3rem, 6vw, 1.9rem);
+            font-size: clamp(1.3rem, 5vw, 1.8rem);
             font-weight: 900;
-            letter-spacing: clamp(0.3rem, 2vw, 0.6rem);
+            letter-spacing: clamp(0.3rem, 1.8vw, 0.5rem);
             text-transform: uppercase;
         }
 
         nav ul {
             list-style: none;
             display: flex;
-            gap: clamp(1rem, 5vw, 2rem);
+            gap: clamp(1rem, 4vw, 2rem);
             margin: 0;
             padding: 0;
         }
@@ -59,7 +62,7 @@
         nav a {
             color: var(--text);
             text-decoration: none;
-            font-size: clamp(0.85rem, 4vw, 1rem);
+            font-size: clamp(0.85rem, 3.5vw, 0.95rem);
             text-transform: uppercase;
             letter-spacing: 0.1rem;
         }
@@ -68,7 +71,7 @@
 
         .icons a {
             color: var(--text);
-            font-size: clamp(1rem, 4.5vw, 1.2rem);
+            font-size: clamp(1rem, 4vw, 1.1rem);
             text-decoration: none;
         }
 
@@ -248,11 +251,21 @@
 
         footer {
             background: var(--bg);
-            padding: clamp(2rem, 8vw, 4rem) 1.5rem;
+            padding: clamp(3rem, 10vw, 5rem) 1.5rem 2rem;
             text-align: center;
             border-top: 1px solid var(--border);
-            font-size: clamp(0.85rem, 3.5vw, 0.95rem);
+            font-size: clamp(0.9rem, 3.5vw, 1rem);
             color: #888;
+        }
+
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        footer a:hover {
+            color: #fff;
         }
     </style>
 </head>
@@ -278,23 +291,24 @@
     <section id="exhibitions" class="section">
         <h2>Exhibitions</h2>
         <p style="text-align:center; max-width:900px; margin:0 auto 80px; font-size:18px; color:#aaa;">
-            Анонимные пространства. Без имён, без лиц. Только свет и пространства.
+            Anonymous spaces. No names, no faces. Only light and spaces.
         </p>
         <div class="exhibitions">
             <div class="exhibit" onclick="openModal('exhibit1')">
-                <img src="https://i.ibb.co/Y5ryMD5/20260205-122714-1.jpg" alt="VOID I main">
+                <img src="https://files.catbox.moe/7qum0e.jpg" alt="VOID I main">
                 <div class="exhibit-info">
                     <h3>VOID I</h3>
-                    <p>Киев, раздевалка, 2026</p>
-                    <p>Первая анонимная презентация.</p>
+                    <p>Kyiv, locker room, 2026</p>
+                    <p>First anonymous presentation.</p>
                 </div>
             </div>
+
             <div class="exhibit" onclick="openModal('exhibit2')">
-                <img src="https://i.ibb.co/JRhY4CWc/3.png" alt="SHADOW ECHO main">
+                <img src="https://files.catbox.moe/glqbbe.png" alt="VOID II main">
                 <div class="exhibit-info">
                     <h3>VOID II</h3>
-                    <p>Москва, раздевалка, 2026</p>
-                    <p>Вторая итерация.</p>
+                    <p>Moscow, locker room, 2026</p>
+                    <p>Second iteration.</p>
                 </div>
             </div>
         </div>
@@ -306,15 +320,15 @@
             <span class="modal-close" onclick="closeModal('exhibit1')">&times;</span>
             <div class="modal-info">
                 <h2>VOID I</h2>
-                <p>Киев, заброшенная раздевалка, 2026</p>
+                <p>Kyiv, abandoned locker room, 2026</p>
             </div>
             <div class="modal-gallery">
-                <img src="https://i.ibb.co/PZDnXQQN/4.png" alt="4">
-                <img src="https://i.ibb.co/2096LKQb/2.png" alt="2">
-                <img src="https://i.ibb.co/rK4tgvd0/1.png" alt="1">
-                <img src="https://i.ibb.co/6c1x6c2X/20260205-122345.jpg" alt="20260205-122345">
-                <img src="https://i.ibb.co/Y5ryMD5/20260205-122714-1.jpg" alt="20260205-122714-1">
-                <img src="https://i.ibb.co/Cs5v46Tj/20260205-122542.jpg" alt="20260205-122542">
+                <img src="https://files.catbox.moe/0fdur4.png" alt="VOID I 1">
+                <img src="https://files.catbox.moe/gas5ia.png" alt="VOID I 2">
+                <img src="https://files.catbox.moe/6fcchd.png" alt="VOID I 3">
+                <img src="https://files.catbox.moe/5n1oj8.jpg" alt="VOID I 4">
+                <img src="https://files.catbox.moe/7qum0e.jpg" alt="VOID I 5">
+                <img src="https://files.catbox.moe/6xffxt.jpg" alt="VOID I 6">
             </div>
         </div>
     </div>
@@ -325,19 +339,22 @@
             <span class="modal-close" onclick="closeModal('exhibit2')">&times;</span>
             <div class="modal-info">
                 <h2>VOID II</h2>
-                <p>Москва, раздевалка, 2026</p>
+                <p>Moscow, locker room, 2026</p>
             </div>
             <div class="modal-gallery">
-                <img src="https://i.ibb.co/JRhY4CWc/3.png" alt="3">
-                <img src="https://i.ibb.co/Y4gfVfdR/20260205-143447-2.jpg" alt="20260205-143447-2">
-                <img src="https://i.ibb.co/p6fmBHV3/20260205-143640-2.jpg" alt="20260205-143640-2">
-                <img src="https://i.ibb.co/MxfXzdY6/20260205-143140-2.jpg" alt="20260205-143140-2">
+                <img src="https://files.catbox.moe/glqbbe.png" alt="VOID II 1">
+                <img src="https://files.catbox.moe/ds3ujd.jpg" alt="VOID II 2">
+                <img src="https://files.catbox.moe/v2tdrz.jpg" alt="VOID II 3">
+                <img src="https://files.catbox.moe/gxi5by.jpg" alt="VOID II 4">
             </div>
         </div>
     </div>
 
     <footer>
-        © 2026 IV VESTIAIRE. No faces. No rules.
+        © 2026 IV VESTIAIRE. No faces. No rules.<br><br>
+        Contacts:<br>
+        <a href="Telegram: @zheezhou" target="_blank">Telegram: @zheezhou</a><br>
+        <a href="Discord: zheezhou" target="_blank">Discord: zheezhou</a>
     </footer>
 
     <script>
